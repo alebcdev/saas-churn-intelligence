@@ -1,0 +1,25 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Entornos y secretos
+.venv/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Modelo: necesario para ejecutar la aplicación
+*.joblib
+!models/churn_model.joblib
+
+# Datos originales: no incluir por defecto
+data/raw/
+
+# Datos procesados: excluir por defecto y permitir los usados por la app
+data/processed/*
+!data/processed/cleaned.parquet
+!data/processed/features.parquet
+!data/processed/customer_segments.parquet
